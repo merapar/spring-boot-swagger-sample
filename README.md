@@ -12,6 +12,14 @@ It's a standard Spring Boot application than can be started with the following c
     "attribute": true
   }
 ```
+Because of this, the XML example showing in the Swagger UI is not correct:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Sample>
+	<code>1</code>
+	<value>string</value>
+</Sample>
+```
 
 # Access sample controller
 The sample controller is exposed on the path `http://localhost:8080/sample` and will return the following static XML 
