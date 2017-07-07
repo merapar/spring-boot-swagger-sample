@@ -6,7 +6,7 @@ It's a standard Spring Boot application than can be started with the following c
 `mvn spring-boot:run`
 
 # Issues to solve
-- The swagger spec is not exposing the @XmlAttribute as attributes. Missing the following config:
+- The swagger spec is not exposing the @XmlAttribute as attributes. Missing the following config on the properties:
 ```xml
   "xml": {
     "attribute": true
