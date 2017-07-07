@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.*;
 public class SampleController {
 	@GetMapping(value = "/sample", produces = MediaType.APPLICATION_XML_VALUE)
 	public ResponseEntity<Sample> sample() {
-		return new ResponseEntity<>(new Sample("sampleValue", Sample.ValueEnum.ENUM2), HttpStatus.OK);
+		return new ResponseEntity<>(new Sample("sampleValue", Sample.CodeEnum.ENUM2), HttpStatus.OK);
 	}
 }
